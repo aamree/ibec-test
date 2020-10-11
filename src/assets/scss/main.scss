@@ -8,3 +8,59 @@ $font-family-base: "Arial",
 sans-serif;
 
 @import "../../../node_modules/bootstrap/scss/bootstrap";
+
+.top-header {
+  &__left-block {
+    font-size: 12px;
+
+    @include media-breakpoint-only(sm) {
+      display: flex;
+      justify-content: center;
+    }
+
+    svg {
+      fill: $light_gray;
+    }
+  }
+
+  &__right-block {
+    @include media-breakpoint-only(sm) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__mail {
+    &_fill {
+      svg {
+        fill: $accent;
+      }
+
+    }
+  }
+
+  &__menu {
+    font-size: 11px;
+
+    &-item {
+      border-right: 1px solid $light_gray;
+
+      @include media-breakpoint-down(xs) {
+        border: none;
+      }
+
+      &:last-child {
+        border: none;
+      }
+
+      a {
+        color: $dark_gray;
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

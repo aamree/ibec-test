@@ -1,5 +1,5 @@
 import React from "react";
-import TopHeader from "./components/topHeader/TopHeader";
+import TopHeader from "components/TopHeader";
 
 function App() {
   return (
