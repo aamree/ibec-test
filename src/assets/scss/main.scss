@@ -1,0 +1,10 @@
+@import "fonts";
+@import "base";
+@import "vars";
+
+$body-bg: $bg_color;
+$body-color: $dark_gray;
+$font-family-base: "Arial",
+sans-serif;
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";

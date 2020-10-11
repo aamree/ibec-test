@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Arial';
+  src: url('../fonts/Arial.eot');
+  src: local('Arial'), local('ArialMT'),
+    url('../fonts/Arial.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Arial.woff') format('woff'),
+    url('../fonts/Arial.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url('../fonts/Arial-Bold.eot');
+  src: local('Arial Bold'), local('Arial-BoldMT'),
+    url('../fonts/Arial-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Arial-Bold.woff') format('woff'),
+    url('../fonts/Arial-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
