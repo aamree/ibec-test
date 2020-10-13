@@ -9,6 +9,21 @@ sans-serif;
 
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
+.active {
+  background-image: url("../images/bg-hover.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 4px;
+}
+
+@include media-breakpoint-down(md) {
+  .active {
+    background-color: $gray;
+    background-image: none;
+  }
+}
+
 .top-header {
   &__left-block {
     font-size: 12px;
@@ -35,7 +50,6 @@ sans-serif;
       svg {
         fill: $accent;
       }
-
     }
   }
 
@@ -61,6 +75,93 @@ sans-serif;
           text-decoration: none;
         }
       }
+    }
+  }
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+
+  @include media-breakpoint-down(md) {
+    align-items: flex-start;
+  }
+
+  &__avatar-block {
+    flex: 0 0 100px;
+  }
+
+  &__nav-block {
+    @include media-breakpoint-down(md) {
+      width: auto !important;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: normal;
+    color: $accent;
+  }
+
+  &__navigation {
+    padding: 0;
+    border-radius: 5px;
+    background: rgb(202, 202, 202);
+    background: linear-gradient(0deg,
+        rgba(202, 202, 202, 1) 0%,
+        rgba(230, 230, 230, 0.75) 100%);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+    &_item {
+      font-size: 13px;
+      padding: 10px 15px 5px;
+      border-right: 1px solid $light_gray;
+
+      @include media-breakpoint-down(xs) {
+        border: none;
+      }
+
+      &:last-child {
+        border: none;
+      }
+
+      a {
+        color: $dark_gray;
+      }
+
+      &:hover {
+        background-image: url("../images/bg-hover.png");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 4px;
+      }
+
+      @include media-breakpoint-down(md) {
+        &:hover {
+          background-color: $gray;
+          background-image: none;
+        }
+      }
+
+    }
+  }
+
+  &__dropdown-button {
+    background-color: transparent !important;
+    outline: none !important;
+    color: $dark_gray;
+    font-weight: normal !important;
+    line-height: 0 !important;
+    height: auto;
+
+    @include media-breakpoint-down(md) {
+      height: 35px !important;
+      padding: 0 !important;
+    }
+
+    &:hover {
+      filter: none;
     }
   }
 }
