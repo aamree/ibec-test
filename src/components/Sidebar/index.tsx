@@ -19,7 +19,7 @@ export default function Sidebar (props: ISidebarProps) {
     }
   ]
   return (
-    <div className="col-lg-2">
+    <div className="col-lg-2 position-sticky sticky-top">
       <Exchange />
       {adv.map((item, i)=><Adv adv={item} key={i}/>)}
     </div>
