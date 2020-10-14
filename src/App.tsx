@@ -1,13 +1,14 @@
 import React from "react";
 import TopHeader from "components/TopHeader";
 import Header from "components/Header";
+import Body from 'components/Body';
 
 function App() {
   return (
     <>
       <TopHeader />
       <Header />
-      <div className="container">hello </div>
+      <Body/>
     </>
   );
 }

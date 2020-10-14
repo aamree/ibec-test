@@ -165,3 +165,86 @@ sans-serif;
     }
   }
 }
+
+.body{
+  &__card{
+    background-image: url("../images/pattern.png");
+    background-repeat: repeat;
+    border: 2px solid $white;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    &:after {
+        content: "";
+        background-color: $dark_gray;
+        opacity: 0.15;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+    }
+
+    &__header {
+      padding-left: 0;
+      padding-bottom: 0;
+      margin-left: 50px;
+      margin-right: 10px;
+      background: none;
+      border-bottom: 1px solid $accent;
+      font-size: 24px;
+      color: $accent;
+        &:before {
+          content: "";
+          background-image: url("../images/flag.png");
+          background-repeat: no-repeat;
+          top: -2px;
+          left: 12px;
+          bottom: 0;
+          right: 0;
+          position: absolute;
+      }
+      &_icon{
+        position: absolute;
+        top: 18px;
+        left: 20px;
+      }
+    }
+
+    &__body {
+      height: 320px;
+    }
+
+    &__footer{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: right;
+      font-size: 12px;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, .7) 50%,
+              rgb(255, 255, 255));
+      border: none;
+    }
+
+    &__table {
+      font-size: 12px;
+    }
+  }
+}
+
+.exchange{
+  font-size: 13px;
+  height: 170px;
+}
+
+.adv{
+  height: 170px;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: $white;
+
+  &_footer{
+    background-color: $accent;
+  }
+}
