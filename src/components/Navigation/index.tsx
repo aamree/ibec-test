@@ -1,4 +1,5 @@
-import * as React from "react";
+import * as React from "react"; 
+import { Link } from 'react-router-dom';
 import Dropdown from "react-multilevel-dropdown";
 import { ReactComponent as List } from "assets/icons/list.svg";
 
@@ -25,14 +26,14 @@ export default function Navigation(props: INavigationProps) {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item active header__navigation_item">
-            <a className="nav-link" href="https://www.google.ru/">
+            <Link className="nav-link" to="/">
               Главная
-            </a>
+            </Link>
           </li>
           <li className="nav-item header__navigation_item">
-            <a className="nav-link" href="https://www.google.ru/">
+            <Link className="nav-link" to="/about">
               Счета
-            </a>
+            </Link>
           </li>
           <li className="nav-item header__navigation_item">
             <a className="nav-link" href="https://www.google.ru/">
@@ -64,14 +65,14 @@ export default function Navigation(props: INavigationProps) {
             </a>
           </li>
           <li className="nav-item header__navigation_item">
-            <a className="nav-link" href="https://www.google.ru/">
-              Заявки
-            </a>
+            <Link className="nav-link" to="/about">
+              О нас
+            </Link>
           </li>
           <li className="nav-item header__navigation_item">
-            <a className="nav-link" href="https://www.google.ru/">
+            <Link className="nav-link" to="/contacts">
               Наши контакты
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
